@@ -7,9 +7,9 @@ from io import BytesIO
 
 from fastai.vision import *
 
-model_file_url = 'https://www.dropbox.com/s/y4kl2gv1akv7y4i/stage-2.pth?raw=1'
-model_file_name = 'model'
-classes = ['black', 'grizzly', 'teddys']
+model_file_url = 'https://www.dropbox.com/s/g03mq3xblwryb4f/testmodel.pkl?dl=1'
+model_file_name = 'testmodel'
+classes = ['atelectasis','cardiomegaly','consolidation','edema','enlargedCardiomediastinum','fracture','lungLesion','lungOpacity','noFinding','pleuralEffusion','pleuralOther','pneumonia','pneumothorax','supportDevices']
 path = Path(__file__).parent
 
 app = Starlette()
